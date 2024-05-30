@@ -5,8 +5,8 @@ import randomUseragent from 'random-useragent';
 // Full credits to @Ciarands!
 
 export async function encodeId(v_id) {
-    const resp = await (await fetch('https://raw.githubusercontent.com/Ciarands/vidsrc-keys/main/keys.json')).json();
-    const [key1, key2] = resp;
+    //const resp = await (await fetch('https://raw.githubusercontent.com/Ciarands/vidsrc-keys/main/keys.json')).json();
+    const [key1, key2] = ["N5sAMLJFtEoYqYMd","uURtqc2Mh2M4M4gz"];
     const decoded_id = keyPermutation(key1, v_id).toString('latin1');
     const encoded_result = keyPermutation(key2, decoded_id).toString('latin1');
     const encoded_base64 = btoa(encoded_result);
