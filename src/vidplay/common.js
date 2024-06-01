@@ -1,1 +1,1 @@
-export const vidplayBase = 'https://vidsrc.me';
+export const vidplayBase = 'https://vid30c.site';
